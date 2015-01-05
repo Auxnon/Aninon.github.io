@@ -1,0 +1,60 @@
+<html>
+	<head>
+		<title>Potato Hamster</title>
+        <link rel="shortcut icon" href="../../../Images/icon.ico">
+        <link href="../../../styles.css" rel="stylesheet"  type="text/css" media="screen"/>
+        <link href="../../../print.css" rel="stylesheet"  type="text/css" media="print"/>
+        <script src="../../../Scripts/stompadon.js">
+        
+        </script>
+	</head>
+	
+	<body onload="init();">
+		<a href="../../../default.htm" id="Banner"><img src="../../../Images/Banner.png"></a>
+		<div id="DivWrapper">
+                <div id="DivHeader">
+                    <ul class="menubar">
+                        <li id="HomeButton"><a href="../../../default.htm"><img src="../../../Images/HomeIcon.png"></a></li>
+                        <li><a href="../../../Comics/Comic1.htm">Comics</a></li>
+                        <li><a href="../../Games.htm">Games</a>
+                            <ul class="smallmenu">
+                                <li><a href="../playable.htm">Playable</a>
+                                    <ul class="smallmenu">
+                                        <li><a href="../Flash/Flash.htm">Flash</a></li>
+                                        <li><a href="../Download/Download.htm">Download</a></li>
+                                        <li class="current"><a href="../Stomp/Stomp.htm">Stompadon</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                            
+                        </li>
+                        <li><a href="../../../Videos/Videos.htm">Videos</a></li>
+                        <li><a href="../../../About.htm">About</a></li>
+                    </ul>
+                </div>
+
+
+                <div id="DivContent">
+                    I Made this game almost a year ago! But it uses javascript (and some html5 features). I had to change some stuff around to make it run in this context. It was made for a friend to help support a character she had come up with and wanted to make a stuffed plushie for via kickstarter. <br/><br/>
+                    
+                   Controls: 
+                    <ol>
+                        <li>Click on the top of the screen to feed him when he gets hungry!</li>
+                        <li>He'll eat on his own!</li> 
+                        <li>Click on his waste to remove it or it will pile up and be unsightly!</li> 
+                        <li>Click and drag on him to move him around at his annoyance!</li>
+                    </ol>
+                    <br/><br/>
+                    <canvas id="theFrame" width="512" height="512"
+    onmousemove="onMove(event);" onmousedown="onDown(event);"
+    onmouseup="onUp(event);"></canvas>
+                </div>
+
+                <div id="DivFooter">
+                   All Rights Reserved, Nicholas McAvoy &#8226; CIS-137  &#8226;
+                    <a href="../../../siteindex.htm">Site Index</a>
+                </div>
+            </div>
+
+	</body>
+</html>

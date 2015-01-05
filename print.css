@@ -1,0 +1,41 @@
+body{
+        font-family:drawnFont,Tahoma,sans-serif;
+        font-size: 22;
+        background:#333;
+}
+
+#DivHeader{
+    display: none;
+}
+#Banner{
+    display: none;
+}
+#DivContent{
+    border: 3px solid gray;
+    margin-top: 1%;
+    border-radius: 20px;
+    padding:2%;
+}
+
+#DivFooter{
+    font-size: 16;
+}
+#DivFooter a{
+    display:none;
+    
+}
+.smallMenu{ 
+    display:none;
+}
+
+#DivContent img{
+    border: 3px solid gray;
+    border-radius:10px;
+}
+
+.comic{
+    text-align: center;
+}
+.comic ul{
+    display:none;
+}

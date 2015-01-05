@@ -1,0 +1,313 @@
+    @font-face{
+        font-family: "drawnFont";
+        src: url(drawnFont.otf);
+    }
+
+    body{
+        font-family:drawnFont,Tahoma,sans-serif;
+        font-size: 22;
+        background:#333;
+        background-image:url(Images/tile.png);
+        //background-repeat: no-repeat;
+        background-attachment: fixed;
+    }
+    #Banner{
+        text-decoration:none;
+    }
+
+    #Banner img{
+        position:relative;
+        margin-left:auto;
+        margin-right:auto;
+        display:block;
+    }
+    #Banner h1{
+        text-align: center;
+        width:100%;
+        font-size:150px;
+        margin-bottom:0px;
+        display:block;
+        color:white;
+    }
+    #DivWhole{
+        float:none;
+        margin: -1%;
+        position:relative;
+        
+    }
+
+    /*trying to find a middle ground between getting an equidistance menu bar as well as be able to tolerate small resolution is tricky*/
+    #DivWrapper{
+        //position:relative;
+        float: left;
+        //float: left;
+        margin: auto;
+        margin-left: 12.5%;
+        width:75%;
+        min-width: 410px;
+        background:#727272;
+        overflow:hidden;
+        //border-radius: 26px;
+    }
+
+    #DivSide{
+        position:fixed;
+        
+        height:200%;
+        width:12.5%;
+        //border:1px ridge black;
+        background: linear-gradient(to right, rgba(0, 0, 0, 0.2) 0%,rgba(0, 0, 0, 0.6) 100%);
+    }
+    #DivSide img{
+        float: right;
+        width:100%;
+        
+    }
+
+    #DivHeader{
+        color:#ff0000;
+        margin: -1em;
+        //position:relative;
+        //background: linear-gradient(to right, #ac3a3a 40%,#1e35a8 60%);
+        min-height: 3em;
+        text-align: center;	
+        //border-top-left-radius: 1em;
+        //border-top-right-radius: 1em;
+        font-size: 60;
+        font-weight:bolder;
+    }
+
+    #DivContent{
+        width:80%;min-height: 400px;
+        background:linear-gradient(to bottom, rgba(0,0,0,0.2) 0%,rgba(0,0,0,0) 100%);
+        border: 6px ridge gray;
+        position: relative; 
+        float:left; margin-left:8%;
+        margin-top: 1%;
+        border-radius: 20px;
+        padding:2%;
+    }
+
+    #DivContent img{
+        border: 3px solid black;
+        border-radius:10px;
+    }
+
+    #DivFooter{
+        position: relative;
+        float:left;
+        text-align: center;
+        width:100%;
+        background: linear-gradient(to bottom, rgba(49, 49, 49,0) 0%, #333 40%);
+        color: white;
+        //border-radius: 1em;
+    }
+
+    /*.menubar{
+        list-style: none; 
+    }
+    .menubar li{
+        box-sizing: border-box;
+        position: relative;
+        left:-20px;
+        float:left;
+        border-radius: 1em;
+        border: 9px ridge gray;
+        width:22%;
+    }
+
+   
+
+    .menubar a{
+        padding-top: 0.5em;
+        padding-bottom: 0.5em;
+        text-decoration:none;
+        display:block;
+        color:black;
+    }
+    .menubar a:hover{
+        background:#CC671E;
+        color:white;
+        border-radius: .8em;
+    }*/
+
+    .topBar{
+        list-style: none; 
+    }
+    .topBar li{
+        box-sizing: border-box;
+        position: relative;
+        left:-20px;
+        float:left;
+        border-radius: 0.em;
+        //border: 9px solid white;
+        //border-right-width: 4.5px;
+        width:50%;
+        
+    }
+    .topBar a{
+        padding-top: 0.5em;
+        padding-bottom: 0.5em;
+        text-decoration:none;
+        display:block;
+        color:black;
+        background: #ffffff
+    }
+    #TopArt{
+        background: #33549b;
+    }
+    #TopGame{
+        background: #9b3333;
+    }
+    .topBar a:hover{
+        background:#ccb11e !important;
+        color:white;
+    }
+    .sideBar{
+        list-style: none; 
+        margin:0;
+       
+    }
+    .sideBar li{
+        box-sizing: border-box;
+        float:left;
+        //border-radius: 0em;
+        width:100%;
+    }
+    .sideBar a{
+       // padding-top: 0.5em;
+        //padding-bottom: 0.5em;
+        text-decoration:none;
+        display:block;
+        //color:black;
+        border-bottom: 10px solid black;
+        background: #ffffff
+    }
+    .sideBar a:hover{
+        background:#ccb11e !important;
+        color:white;
+        margin-left: -10px;
+    }
+
+ /* I researched '!important' as a solution to allow my current class to override like an id class. (Because if the home button is current i cant apply a second id to it) It's cruel to use for more flexible css but for this project's sake, i will risk it! */
+
+    .current{
+        border:0 !important;
+        border-left: 9px ridge #ccc358 !important;
+        border-right: 9px groove #ccc358 !important;
+        border-top: 9px ridge #ccc358 !important;
+        
+        background:#99C26F;
+        background: #ccc358;
+    }
+    #current a{ color:white;}
+
+
+    #HomeButton{
+        width:4%;
+        min-width: 44px;
+    }
+
+
+    /* unfortunately we need to redeclare some defaults for submenu items,
+    the alternative would be to give every large menu item a class, for some reason this    seemed easier?*/
+
+    .smallMenu{
+        background: linear-gradient(to bottom, rgba(170, 207, 204, 0) 0%, rgba(170, 207, 204, .3) 40%);
+            /*linear-gradient(to bottom, rgba(0,0,0,0) 0%,rgba(0,0,0,.6) 100%);*/
+        font-size: 20;
+        border-bottom-left-radius: 1em;
+        border-bottom-right-radius: 1em;
+        list-style: none;
+        
+        padding:0;
+        padding-left: .8em;
+        margin-left:.4em;
+        margin-right:-.8em;
+        
+    }
+    .smallMenu li{
+        float:none;
+        border: 9px ridge gray;
+        width:100%;
+    }
+    .smallMenu a{
+        
+    }
+
+
+
+
+
+    .divBlock{
+        position: relative;
+        width:40%;
+        height:auto;
+       border-radius: .8em;
+        background:linear-gradient(to bottom, rgba(0,0,0,0.2) 50%,rgba(0,0,0,0) 100%);
+        margin:1%;
+        padding:2%;
+       float:left;
+    }
+
+     .divBlock a{
+         position: relative;
+        top:-30px;
+        text-align: center;
+        margin:-10px;
+         
+         background:#AACFCC;
+         padding:10px;
+         border-radius: .8em;
+         text-decoration: none;
+         display: block;
+         color:black;
+     }
+    .divBlock a:hover{
+        background:#CC671E;
+        color:white;
+        border-radius: .8em;
+    }
+
+   
+    /*
+    .comic{
+        text-align: center;
+        position: relative;
+    }
+    .comic img{
+        width:90%;
+        border:3px solid black;
+        border-radius: 10px;
+    }
+    .comic ul{
+        text-align:center;
+        position:relative;
+        margin:auto;
+        width:80%;
+    }
+    .comic li{
+        width:auto;
+        float:left;
+        border:3px solid black;
+    }
+    .comic a{
+        display:block;
+        padding:10px;
+        text-decoration: none;
+    }
+    .comic a:hover{
+        background:#CC671E;
+        color:white;
+    }
+
+
+
+
+
+    abbr{
+        color:#a44;
+    }*/
+    
+
+    
